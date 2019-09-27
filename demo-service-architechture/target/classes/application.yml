@@ -1,0 +1,16 @@
+service:
+  data: 
+    name: dataShare
+    host: localhost
+    json: provided
+    
+multi-service:
+  data2: 
+    -
+      name: dataShare2
+      host: localhost2
+      json: provided2
+    -
+      name: dataShare3
+      host: localhost3
+      json: provided3
